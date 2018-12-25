@@ -4,6 +4,11 @@ services:
     build: .
     container_name: test-web
     ports:
-     - "4000:3000"
+      - "4000:3000"
     volumes:
       - ./static:/yurko/static
+  mongo:
+    image: mongo:3.2
+    container_name: test-mongo
+    ports:
+      - "27017:27017"
