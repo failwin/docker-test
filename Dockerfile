@@ -4,6 +4,9 @@ COPY . /yurko
 
 WORKDIR /yurko
 
+RUN npm i yarn -g
+RUN yarn
+
 EXPOSE 3000
 
 RUN mkdir -p /yurko/static
