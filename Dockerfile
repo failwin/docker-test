@@ -6,4 +6,8 @@ WORKDIR /yurko
 
 EXPOSE 3000
 
+RUN mkdir -p /yurko/static
+
+VOLUME /yurko/static
+
 CMD [ "node", "./index.js" ]
