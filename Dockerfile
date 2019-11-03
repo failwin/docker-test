@@ -4,10 +4,10 @@ COPY . /yurko
 
 WORKDIR /yurko
 
-EXPOSE 3000
+RUN npm install
 
-RUN mkdir -p /yurko/static
-
-VOLUME /yurko/static
+EXPOSE 6666
+EXPOSE 3333
+EXPOSE 4444
 
 CMD [ "node", "./index.js" ]
